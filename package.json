@@ -1,65 +1,27 @@
 {
-  "name": "pkg-name",
-  "type": "module",
+  "name": "pkg-init-monorepo",
   "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@7.0.0",
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/pkg-name#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/pkg-name/issues"
-  },
-  "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antfu/pkg-name.git"
-  },
-  "funding": "https://github.com/sponsors/antfu",
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
-    "lint": "eslint .",
-    "prepublishOnly": "nr build",
-    "release": "bumpp --commit --push --tag && npm publish",
-    "start": "esmo src/index.ts",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "build": "pnpm -r --parallel --filter=./packages/** run build",
+    "dev": "pnpm -r --parallel --filter=./packages/** run dev",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "test": "pnpm -r --parallel --filter=./packages/** run test"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
-    "@antfu/ni": "^0.16.2",
     "@types/node": "^17.0.31",
     "bumpp": "^7.1.1",
-    "eslint": "^8.14.0",
+    "eslint": "^8.15.0",
     "esmo": "^0.14.1",
     "pnpm": "^7.0.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.6.4",
     "unbuild": "^0.7.4",
-    "vite": "^2.9.7",
-    "vitest": "^0.10.2"
+    "vite": "^2.9.8",
+    "vitest": "^0.10.5"
   }
 }

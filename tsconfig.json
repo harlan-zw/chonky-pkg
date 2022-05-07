@@ -9,6 +9,13 @@
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "pkg-init": ["./packages/pkg-init/src"],
+    },
+    "types": [
+      "vitest",
+      "vitest/globals"
+    ]
   }
 }
