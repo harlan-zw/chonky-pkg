@@ -1,11 +1,11 @@
 <h1 align='center'>pkg-init</h1>
 
 <p align="center">
-<a href='https://github.com/harlan-zw/pkg-init/actions/workflows/test.yml'>
-<img src='https://github.com/harlan-zw/pkg-init/actions/workflows/test.yml/badge.svg' >
+<a href='https://github.com/harlan-zw/pkg-init/actions/workflows/ci.yml'>
+<img src='https://github.com/harlan-zw/pkg-init/actions/workflows/ci.yml/badge.svg' >
 </a>
-<a href="https://www.npmjs.com/package/@harlan-zw/pkg-init" target="__blank"><img src="https://img.shields.io/npm/v/@harlan-zw/pkg-init?color=2B90B6&label=" alt="NPM version"></a>
-<a href="https://www.npmjs.com/package/@harlan-zw/pkg-init" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@harlan-zw/pkg-init?color=349dbe&label="></a>
+<a href="https://www.npmjs.com/package/pkg-name" target="__blank"><img src="https://img.shields.io/npm/v/pkg-name?color=2B90B6&label=" alt="NPM version"></a>
+<a href="https://www.npmjs.com/package/pkg-name" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/pkg-name?color=349dbe&label="></a>
 <br>
 </p>
 
