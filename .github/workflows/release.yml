@@ -50,6 +50,9 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: Install
+        run: pnpm i
+
       - run: pnpm changelog-md
 
       - name: Commit
