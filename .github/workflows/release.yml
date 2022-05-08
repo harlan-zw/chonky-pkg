@@ -60,7 +60,7 @@ jobs:
       - name: Commit
         uses: EndBug/add-and-commit@v4
         with:
-          message: "chore: update changelog"
-          add: "CHANGELOG.md"
+          message: 'chore: update changelog'
+          add: CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
