@@ -5,7 +5,6 @@
   "packageManager": "pnpm@7.0.0",
   "scripts": {
     "changelog-md": "auto-changelog --commit-limit false -u",
-    "release-notes": "changelogen",
     "build": "pnpm -r --parallel --filter=./packages/** run build",
     "dev": "pnpm -r --parallel --filter=./packages/** run dev",
     "lint": "eslint . --fix",
