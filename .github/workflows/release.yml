@@ -30,6 +30,9 @@ jobs:
 
       - run: npx changelogen@latest > ${{ github.workspace }}-CHANGELOG.md
 
+      # Remove first two lines
+      - run: sed '1d;2d' ${{ github.workspace }}-CHANGELOG.md
+
       - name: Push release
         uses: softprops/action-gh-release@v1
         with:
