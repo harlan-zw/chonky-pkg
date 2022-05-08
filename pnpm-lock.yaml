@@ -30,7 +30,7 @@ importers:
       vite: 2.9.8
       vitest: 0.10.5
 
-  packages/pkg-init:
+  packages/chonky-pkg:
     specifiers: {}
 
 packages:

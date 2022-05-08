@@ -10,7 +10,7 @@
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag",
-    "test": "pnpm -r --parallel --filter=./packages/** run test"
+    "test": "vitest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
