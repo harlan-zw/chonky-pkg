@@ -1,19 +1,19 @@
 {
-  "name": "pkg-init",
+  "name": "chonky-pkg",
   "type": "module",
   "version": "0.0.15",
   "packageManager": "pnpm@7.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/harlan-zw/pkg-init#readme",
+  "homepage": "https://github.com/harlan-zw/chonky-pkg#readme",
   "bugs": {
-    "url": "https://github.com/harlan-zw/pkg-init/issues"
+    "url": "https://github.com/harlan-zw/chonky-pkg/issues"
   },
   "license": "MIT",
   "author": "Harlan Wilton <harlan@harlanzw.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harlan-zw/pkg-init.git"
+    "url": "git+https://github.com/harlan-zw/chonky-pkg.git"
   },
   "funding": "https://github.com/sponsors/harlan-zw",
   "main": "./dist/index.mjs",

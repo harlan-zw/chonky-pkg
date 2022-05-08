@@ -1,5 +1,5 @@
 {
-  "name": "pkg-init-monorepo",
+  "name": "chonky-pkg-monorepo",
   "version": "0.0.15",
   "private": true,
   "packageManager": "pnpm@7.0.0",

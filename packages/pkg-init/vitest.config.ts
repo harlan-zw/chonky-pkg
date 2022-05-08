@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 const r = (p: string) => resolve(__dirname, p)
 
 export const alias: AliasOptions = {
-  'pkg-init': r('./src/'),
+  'chonky-pkg': r('./src/'),
 }
 
 export default defineConfig({
