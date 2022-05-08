@@ -42,7 +42,7 @@
     "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --push --tag && npm publish",
     "start": "esmo src/index.ts",
     "test": "vitest"
