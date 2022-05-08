@@ -1,4 +1,4 @@
-<h1 align='center'>chonky-pkg</h1>
+<h1 align='center'>🦭 chonky-pkg</h1>
 
 <p align="center">
 <a href='https://github.com/harlan-zw/chonky-pkg/actions/workflows/ci.yml'>
