@@ -28,7 +28,14 @@ jobs:
         run: pnpm i
 
       - name: Lint
-        run: pnpm lint:check
+        run: pnpm lint
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
+        with:
+          message: 'chore: lint'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   test:
     runs-on: ${{ matrix.os }}
