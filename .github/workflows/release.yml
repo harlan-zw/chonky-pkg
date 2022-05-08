@@ -63,7 +63,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: changelogen > ${{ github.workspace }}-CHANGELOG.md
+      - run: npx changelogen@latest > ${{ github.workspace }}-CHANGELOG.md
 
       - name: Push release
         uses: softprops/action-gh-release@v1
