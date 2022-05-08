@@ -1,9 +1,10 @@
 {
   "name": "pkg-init-monorepo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "packageManager": "pnpm@7.0.0",
   "scripts": {
+    "changelog": "changelogen --from=$(git rev-list --max-parents=0 HEAD) > CHANGELOG.md",
     "build": "pnpm -r --parallel --filter=./packages/** run build",
     "dev": "pnpm -r --parallel --filter=./packages/** run dev",
     "lint": "eslint . --fix",
@@ -23,5 +24,9 @@
     "unbuild": "^0.7.4",
     "vite": "^2.9.8",
     "vitest": "^0.10.5"
+  },
+  "dependencies": {
+    "changelogen": "^0.0.5",
+    "standard-version": "^9.3.2"
   }
 }
