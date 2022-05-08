@@ -1,6 +1,6 @@
 {
   "name": "pkg-init-monorepo",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "packageManager": "pnpm@7.0.0",
   "scripts": {
