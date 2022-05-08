@@ -31,6 +31,8 @@ Flexible package template based on <a href="https://github.com/antfu/starter-ts"
 ## Features
 
 - 🦭 Monorepo design, keep build dependencies far away from your package dependencies.
+- 💅 Automated GitHub releases with [changelogen](https://github.com/unjs/changelogen)
+- 🤖 Extra CI Tools: Automated CHANGELOG.md with [auto-changelog](), lint fixes on push 
 - ✨ Based on <a href="https://github.com/antfu/starter-ts">starter-ts</a>: [unbuild](https://github.com/unjs/unbuild), [vitest](https://github.com/vitest-dev/vitest), [pnpm@7](https://github.com/pnpm/pnpm), etc
 
 
