@@ -28,10 +28,11 @@ jobs:
       - name: PNPM build
         run: pnpm run build
 
-      - run: npx changelogen@latest > ${{ github.workspace }}-CHANGELOG.md
+      - name: Release Notes
+        run: npx changelogen@latest > ${{ github.workspace }}-CHANGELOG.md
 
-      # Remove first two lines
-      - run: sed '1d;2d' ${{ github.workspace }}-CHANGELOG.md
+      - name: Trim Release Notes and debug
+        run: sed '1d;2d' ${{ github.workspace }}-CHANGELOG.md && cat ${{ github.workspace }}-CHANGELOG.md
 
       - name: Push release
         uses: softprops/action-gh-release@v1
