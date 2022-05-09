@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "chonky-pkg":  ["./packages/chonky-pkg/src"],
+      "chonky-pkg": ["./packages/chonky-pkg/src"],
       "@chonky-pkg/core": ["./packages/core/src"]
     },
     "types": [
