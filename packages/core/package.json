@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@7.0.0",
-  "description": "",
+  "description": "My package core",
   "keywords": [],
   "homepage": "https://github.com/harlan-zw/chonky-pkg#readme",
   "bugs": {
