@@ -1,5 +1,5 @@
 {
-  "name": "chonky-pkg",
+  "name": "@chonky-pkg/core",
   "type": "module",
   "version": "0.0.15",
   "packageManager": "pnpm@7.0.0",
@@ -41,8 +41,5 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub"
-  },
-  "dependencies": {
-    "@chonky-pkg/core": "workspace:*"
   }
 }

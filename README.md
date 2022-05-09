@@ -32,9 +32,15 @@ Flexible package template based on <a href="https://github.com/antfu/starter-ts"
 
 - 🦭 Monorepo design, keep build dependencies far away from your package dependencies.
 - 💅 Automated GitHub releases with [changelogen](https://github.com/unjs/changelogen)
+- 🌳 Setup for [npm scopes](https://docs.npmjs.com/cli/v8/using-npm/scope)
 - 🤖 CI lints and commits changes
 - ✨ Based on <a href="https://github.com/antfu/starter-ts">starter-ts</a>: [unbuild](https://github.com/unjs/unbuild), [vitest](https://github.com/vitest-dev/vitest), [pnpm@7](https://github.com/pnpm/pnpm), etc
 
+## Usage
+
+1. Use the template
+2. Search-replace `chonky-pkg` -> `your-package`
+3. Configure your github actions (need write permissions and NPM_TOKEN secret).
 
 ## Sponsors
 
