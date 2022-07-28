@@ -4,32 +4,32 @@
   "version": "0.1.2",
   "packageManager": "pnpm@7.0.0",
   "description": "My package",
-  "keywords": [],
-  "homepage": "https://github.com/harlan-zw/chonky-pkg#readme",
-  "bugs": {
-    "url": "https://github.com/harlan-zw/chonky-pkg/issues"
-  },
-  "license": "MIT",
   "author": "Harlan Wilton <harlan@harlanzw.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/harlan-zw",
+  "homepage": "https://github.com/harlan-zw/chonky-pkg#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harlan-zw/chonky-pkg.git"
   },
-  "funding": "https://github.com/sponsors/harlan-zw",
+  "bugs": {
+    "url": "https://github.com/harlan-zw/chonky-pkg/issues"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub"
